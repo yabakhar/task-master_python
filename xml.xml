@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<programs>
+    <program>
+        <name>nginex</name>
+        <cmd>/usr/local/bin/nginx -c /etc/nginx/test.conf</cmd>
+        <numprocs>1</numprocs>
+        <umask>18</umask>
+        <workingdir>/tmp</workingdir>
+        <autostart>true</autostart>
+        <autorestart>unexpected</autorestart>
+        <exitcodes>0</exitcodes>
+        <exitcodes>2</exitcodes>
+        <startretries>3</startretries>
+        <starttime>5</starttime>
+        <stopsignal>TERM</stopsignal>
+        <stoptime>10</stoptime>
+        <stdout>/tmp/nginx.stdout</stdout>
+        <stderr>/tmp/nginx.stderr</stderr>
+        <env>
+        <STARTED_BY>taskmaster</STARTED_BY>
+        <ANSWER>42</ANSWER>
+        </env>
+    </program>
+</programs>

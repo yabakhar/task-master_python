@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE programs SYSTEM "product.dtd">
+<programs>
+    <program>
+        <name>nginex</name>
+        <cmd>/usr/local/bin/nginx -c /etc/nginx/test.conf</cmd>
+        <numprocs>1</numprocs>
+        <umask>18</umask>
+        <workingdir>/tmp</workingdir>
+    </program>
+</programs>

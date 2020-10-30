@@ -1,0 +1,9 @@
+<!ELEMENT programs (program)>
+
+<!ELEMENT program (name,cmd,numprocs,umask,workingdir)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT cmd (#PCDATA)>
+<!ELEMENT numprocs (#PCDATA)>
+<!ELEMENT umask (#PCDATA)>
+<!ELEMENT workingdir (#PCDATA)>
