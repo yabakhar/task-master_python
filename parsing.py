@@ -1,8 +1,9 @@
 from lxml import etree, objectify
-from io import StringIO
 import sys
+import daemons
 
-
+# def mydeamon(deam):
+#     print(deam)
 
 def validate(xmlfile, dtdfile):
     dtd = etree.DTD(dtdfile)
@@ -10,7 +11,7 @@ def validate(xmlfile, dtdfile):
     root = tree.getroot()
     status = dtd.validate(root) 
     if status:
-        print("ok")
+        print("validate successfully")
     else:
         print("Problem validating")
 
@@ -18,4 +19,4 @@ if __name__ == "__main__":
     xmlfile = "/Users/yabakhar/Desktop/task-master_python/kk.xml"
     dtdfile = "/Users/yabakhar/Desktop/task-master_python/product.dtd"
     validate(xmlfile,dtdfile)
-
+    # mydeamon("yabakhar")
